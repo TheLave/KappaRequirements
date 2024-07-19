@@ -1,13 +1,13 @@
 {
   "name": "kappa-requirements",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --cname=cs2.thelave.nl"
+    "deploy": "ng deploy --cname=kappa.thelave.nl"
   },
   "private": true,
   "dependencies": {
