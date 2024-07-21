@@ -5,6 +5,10 @@
       <mat-expansion-panel expanded>
         <mat-expansion-panel-header>
           <mat-panel-title>Required quests</mat-panel-title>
+          <mat-panel-description>
+            {{ requirements.quests.length - completedQuests.length }}
+            remaining
+          </mat-panel-description>
         </mat-expansion-panel-header>
 
         <div class="expansion-content">
@@ -36,6 +40,10 @@
       <mat-expansion-panel expanded>
         <mat-expansion-panel-header>
           <mat-panel-title>Required items</mat-panel-title>
+          <mat-panel-description>
+            {{ requirements.items.length - ownedItems.length }}
+            remaining
+          </mat-panel-description>
         </mat-expansion-panel-header>
 
         <div class="expansion-content">
