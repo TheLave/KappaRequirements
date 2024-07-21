@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --cname=kappa.thelave.nl"
+    "deploy": "ng deploy --repo=https://github.com/TheLave/KappaRequirements.git --cname=kappa.thelave.nl"
   },
   "private": true,
   "dependencies": {
