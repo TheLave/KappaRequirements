@@ -15,6 +15,25 @@ h1 {
     .expansion-content {
       display: flex;
       flex-direction: column;
+
+      .quest {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+
+        button {
+          width: 100%;
+        }
+
+        a {
+          display: flex;
+          height: 100%;
+          align-items: center;
+          text-decoration: none;
+          color: var(--mdc-text-button-label-text-color);
+        }
+      }
     }
   }
 }

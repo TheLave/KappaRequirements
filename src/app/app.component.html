@@ -29,9 +29,19 @@
 
           @for (quest of filteredQuests; track $index) {
             @if (!completedQuests.includes(quest)) {
-              <button mat-button (click)="completeQuest(quest)">
-                {{ quest }}
-              </button>
+              <div class="quest">
+                <button mat-button (click)="completeQuest(quest)">
+                  {{ quest }}
+                </button>
+
+                <a
+                  [href]="getWikiLinkFromQuestName(quest)"
+                  target="_blank"
+                  class="mat-text-on-primary-container"
+                >
+                  <mat-icon>open_in_new</mat-icon>
+                </a>
+              </div>
             }
           }
         </div>

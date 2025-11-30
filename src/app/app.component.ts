@@ -117,4 +117,8 @@ export class AppComponent implements OnInit {
     );
     this.db.saveRequirements(this.savedRequirements);
   }
+
+  getWikiLinkFromQuestName(questName: string) {
+    return `https://escapefromtarkov.fandom.com/wiki/${questName.replace(' ', '_')}`;
+  }
 }
